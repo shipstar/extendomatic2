@@ -4,5 +4,5 @@ module Enumerable
       yield memo, el
       memo
     end
-  end
+  end unless method_defined?(:accumulate)
 end
